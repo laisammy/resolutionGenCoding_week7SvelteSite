@@ -11,13 +11,10 @@
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ name, address, phone })
         });
-
         const result = await response.json();
         console.log(result);
 
-        if (result.success) {
-            goto('/');
-        }
+        goto('/');
     }
 </script>
 
