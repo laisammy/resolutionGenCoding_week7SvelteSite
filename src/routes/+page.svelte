@@ -17,7 +17,7 @@
     }
 
     async function delete_contact(name, address, phone) {
-        const response = await fetch('/api/remove-contact', {
+        const response = await fetch('/api/delete-contact', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ name, address, phone })
